@@ -1,1 +1,32 @@
 
+balance_record = []
+
+def deposit(cid, amount):
+    for record in balance_record:
+        if record[0] == cid:
+            record[1] = record[1] + amount
+            print('you added:', amount, 'rs' )
+           
+            return
+    balance_record.append([cid, amount])
+    print(balance_record)
+    print('balance deposit successfully')
+    
+def check_balance(cid):
+    for record in balance_record:
+        if record[0] == cid:
+           print('your balance is:' , record[1], 'rs')
+           return
+def withdraw(cid, amount):
+    for record in balance_record:
+        if record[0] == cid:
+            if record[1] >= amount:
+                record[1] = record[1] - amount
+                print('withdraw successfully')
+            else:
+                print('insufficient balance')
+    
+                return
+
+def logout():
+    print('you have successfully logout')
