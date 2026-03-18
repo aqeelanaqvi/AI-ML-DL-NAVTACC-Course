@@ -1,1 +1,21 @@
 
+def add(a,b):
+    add = a+b
+    print(f"Addition of {a}and {b} is {add}")
+    return add
+
+def subtract(a,b):
+    add = a-b
+    print(f"Subtraction of {a}and {b} is {Subtract}")
+    return subtract
+
+def multiply(a,b):
+    multiply = a*b
+    print(f"Multiplication of {a}and {b} is {multiply}")
+    return multiply
+
+def divide(a,b):
+    divide = a/b
+    print(f"Division of {a}and {b} is {divide}")
+    return divide
+
